@@ -110,6 +110,7 @@ body {
 
 .person {
   width: 15%;
+  height: auto;
   font-size: large;
 }
 
