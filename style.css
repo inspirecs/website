@@ -1,9 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+  .logocover {
+    min-width: 300px; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+
+  .caption {
+    min-width: 300px;
+  }
+
+  .moreabout {
+    min-width: 300px;
+  }
+}
+
 nav {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   border-bottom: 2px solid black;
 }
@@ -13,6 +28,7 @@ footer {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
+  padding: 1em 1em 1em 1em;
   border-top: 2px solid black;
 }
 
@@ -47,6 +63,12 @@ body {
   margin: 1em 0.5em 1em 0.5em;
 }
 
+.caption {
+  width: 50%;
+  margin: 2em 0 4em 0;
+  text-align: center;
+}
+
 .navbutton:hover {
   color: #0069D9;
 }
@@ -60,7 +82,7 @@ body {
   margin-top: 3em;
   padding: 3em auto 3em auto;
   width: 40%;
-  margin: 1em 30% 1em 30%;
+  margin: 1em auto 1em auto;
 }
 
 .logocover h1 {
@@ -75,7 +97,7 @@ body {
 .moreabout {
   font-size: large;
   width: 40%;
-  margin: 1em 30% 1em 30%;
+  margin: 1em auto 1em auto;
   color: black;
   text-align: justify;
 }
@@ -99,6 +121,8 @@ body {
 
 .avatar {
   border-radius: 15px;
+  width: 40%;
+  max-width: 500px;
   border: 2px solid black;
   margin: 0.5em 0.5em 2em 0.5em;
 }
