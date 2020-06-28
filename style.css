@@ -23,6 +23,22 @@
   }
 }
 
+.stat {
+	text-align: center;
+	color: #0069D9;
+	margin: 0 5em 0 5em;
+}
+
+.stat h1 {
+	font-size: xx-large;
+	font-weight: bold;
+}
+
+.stat h2 {
+	font-size: x-large;
+	font-weight: 300;
+}
+
 nav {
   display: flex;
   flex-direction: row;
